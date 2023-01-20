@@ -1,4 +1,3 @@
 # test-repository
 
-
-This a new edit from local computer
+this is a readme file 
