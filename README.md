@@ -1,3 +1,3 @@
-# test-repository
+# My first repo
 
-this is a readme file 
+Working over my knowlege 
