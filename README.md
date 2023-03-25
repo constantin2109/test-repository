@@ -63,7 +63,7 @@
             setTimeout(loop, 1000 / 15);
         };
 
-        // Start the game
+        // Start the game....
         loop();
     </script>
 </body>
