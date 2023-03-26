@@ -65,6 +65,16 @@
 
         // Start the game....
         loop();
+        // Update the game state
+        const update = () => {
+            // Move the snake
+            if (direction === "right") {
+                snakeX += 1;
+            } else if (direction === "left") {
+                snakeX -= 1;
+            } else if (direction === "up") {
+                snakeY -= 1;
+            } else if (
     </script>
 </body>
 </html>
