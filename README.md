@@ -19,55 +19,55 @@
     <h1>New Puzzle Game</h1>
     <div id="gameCanvas"></div>
     <script>
-        // Setup the game canvas
+        // Setup the game canvas:
         const canvas = document.getElementById('gameCanvas');
         const ctx = canvas.getContext('2d');
 
-        // Set the game size
+        // Set the game size:
         const blockSize = 20;
         const widthInBlocks = 25;
         const heightInBlocks = 25;
 
-        // Set the starting position and direction of the snake
+        // Set the starting position and direction of the snake...
         let snakeX = 10;
         let snakeY = 10;
         let direction = "right";
 
-        // Draw the snake on the canvas
+        // Draw the snake on the canvas...
         const drawSnake = () => {
             ctx.fillStyle = "#000000";
             ctx.fillRect(snakeX * blockSize, snakeY * blockSize, blockSize, blockSize);
         }
 
-        // Draw the canvas border
+        // Draw the canvas border...
         const drawBorder = () => {
             ctx.fillStyle = "#000000";
             ctx.fillRect(0, 0, widthInBlocks * blockSize, heightInBlocks * blockSize);
         }
 
-        // Draw the game on the canvas
+        // Draw the game on the canvas...
         const draw = () => {
             drawBorder();
             drawSnake();
         };
 
-        // Update the game state
+        // Update the game state...
         const update = () => {
             snakeX += 1;
         };
 
-        // Main game loop
+        // Main game loop...
         const loop = () => {
             update();
             draw();
             setTimeout(loop, 1000 / 15);
         };
 
-        // Start the game....
+        // Start the game...
         loop();
-        // Update the game state
+        // Update the game state...
         const update = () => {
-            // Move the snake
+            // Move the snake...
             if (direction === "right") {
                 snakeX += 1;
             } else if (direction === "left") {
