@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link href="style1.css" rel="stylesheet" />
+      <title>Document</title>
+      <h1>My work</h1>
+   </head>
+   <button id="box">Click Here</button>
+
+   <body>
+      <script src="myscript1.js"></script>
+   </body>
+</html>
+
+
+-----------------------------------------------------------------------
+
+
+.box {
+   height: 300px;
+   width: 500px;
+   background: red;
+   margin: 20px auto;
+   border-radius: 10px;
+   margin: auto;
+   margin-top: 20px;
+}
+body {
+   background-color: blue;
+   color: aqua;
+   text-align: center;
+}
+button {
+   height: 50px;
+   width: 130px;
+   border-radius: 10px;
+   background-color: brown;
+   color: blue;
+}
+button:hover {
+   transition: 2s;
+   background-color: chartreuse;
+   color: rgb(255, 0, 0);
+   transform: translate(10px);
+   animation: alternate-reverse;
+}
+
+h1 {
+   color: rgb(18, 18, 85);
+}
+h1:hover {
+   transition: 2s;
+
+   color: rgb(255, 0, 0);
+   transform: translate(10px);
+   animation: alternate-reverse;
+}
+body:hover {
+   transition: 2s;
+   background-color: chartreuse;
+   color: rgb(255, 0, 0);
+   transform: translate(10px);
+   animation: alternate-reverse;
+   animation-duration: 2s;
+}
