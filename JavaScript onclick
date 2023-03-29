@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Javascript</title>
+   <link href="mystyle.css" rel="stylesheet" />
+   <h1>JavaScript Button onclick change color</h1>
+</head>
+
+<body>
+   <div button.addEventListener("click", changeColor);></div>
+
+   <button onclick="changeColor()">Click Me</button>
+   <div id="changeMe"></div>
+   <script src="myscript.js"></script>
+</body>
+
+</html>
+
+------------------------------------------------------------------------------mystyle.css-----------------------------------------------
+
+#changeMe {
+   height: 300px;
+   width: 500px;
+   background: red;
+   margin: 20px auto;
+   border-radius: 10px;
+   margin: auto;
+   margin-top: 20px;
+}
+body {
+   background-color: rgb(0, 140, 255);
+   text-align: center;
+}
+body:hover {
+   transition: 2s;
+   background-color: chartreuse;
+   color: rgb(255, 0, 0);
+   transform: translate(10px);
+   animation: alternate-reverse;
+   animation-duration: 5s;
+}
+
+h1 {
+   color: blue;
+}
+h1:hover {
+   transition: 2s;
+
+   color: rgb(255, 0, 0);
+   transform: translate(10px);
+   animation: alternate-reverse;
+}
+button {
+   height: 30px;
+   width: 100px;
+   border-radius: 10px;
+   background-color: brown;
+   color: blue;
+}
+button:hover {
+   transition: 2s;
+   background-color: chartreuse;
+   color: rgb(255, 0, 0);
+   transform: translate(10px);
+   animation: alternate-reverse;
+}
+@keyframes alternate-reverse {
+   0% {
+      opacity: 0;
+   }
+   50% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0;
+   }
+}
+body {
+   background-color: #c6e2ff;
+}
+
+h1 {
+   color: #1c7ac5;
+   text-align: center;
+   margin-top: 50px;
+}
+
+#click-area {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+--------------------------------------------------------------------------------myscript.js--------------------------------
+
+function changeColor() {
+   let colorText = [
+      "red",
+      "green",
+      "blue",
+      "orange",
+      "pink",
+      "yellow",
+      "cyan",
+      "magenta",
+      "gray",
+      "purple",
+   ]
+   let randomColor = colorText[Math.floor(Math.random() * colorText.length)]
+   document.getElementById("changeMe").style.backgroundColor = randomColor
+}
+
+document.addEventListener("click", function () {
+   changeColor()
+})
+let clickArea = document.getElementById("click-area")
+let colors = [
+   "#ffcc99",
+   "#ffff99",
+   "#ccff99",
+   "#99ffcc",
+   "#99ffff",
+   "#cc99ff",
+   "#ff99cc",
+]
+
+clickArea.addEventListener("click", function () {
+   let randomColor = colors[Math.floor(Math.random() * colors.length)]
+   document.body.style.backgroundColor = randomColor
+})
