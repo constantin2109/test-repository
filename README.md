@@ -16,7 +16,7 @@
     </style>
 </head>
 <body>
-    <h1>New Puzzle Game</h1>
+    <h1>New Puzzle Game...</h1>
     <div id="gameCanvas"></div>
     <script>
         // Setup the game canvas:
