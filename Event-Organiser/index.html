@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Organizer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Event Organizer</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Add New Event</h2>
+            <form id="add-event-form">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" required>
+
+                <label for="event-date">Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+
+                <label for="event-time">Time:</label>
+                <input type="time" id="event-time" name="event-time" required>
+
+                <label for="event-location">Location:</label>
+                <input type="text" id="event-location" name="event-location" required>
+
+                <label for="event-notes">Notes:</label>
+                <textarea id="event-notes" name="event-notes"></textarea>
+
+                <button type="submit">Add Event</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Event List</h2>
+            <input type="text" id="search-box" placeholder="Search...">
+            <table id="event-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                        <th>Notes</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Map</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Event Organizer &copy; 2023</p>
+    </footer>
+</body>
+
+</html>
